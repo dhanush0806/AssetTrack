@@ -1,0 +1,113 @@
+.stat-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  padding: 1.25rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.stat-card:hover {
+  border-color: #cbd5e1;
+}
+
+.stat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.stat-card-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-card-icon-wrapper {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-card-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.stat-card-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.stat-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+}
+
+.stat-trend {
+  font-weight: 600;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+}
+
+.trend-positive {
+  background-color: #ecfdf5;
+  color: #059669;
+}
+
+.trend-negative {
+  background-color: #fef2f2;
+  color: #dc2626;
+}
+
+.trend-neutral {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.stat-subtitle {
+  color: #64748b;
+}
+
+/* Color Themes */
+.stat-card-blue .stat-card-icon-wrapper {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.stat-card-emerald .stat-card-icon-wrapper {
+  background-color: #ecfdf5;
+  color: #059669;
+}
+
+.stat-card-amber .stat-card-icon-wrapper {
+  background-color: #fffbeb;
+  color: #d97706;
+}
+
+.stat-card-rose .stat-card-icon-wrapper {
+  background-color: #fef2f2;
+  color: #e11d48;
+}
+
+.stat-card-indigo .stat-card-icon-wrapper {
+  background-color: #eef2ff;
+  color: #4f46e5;
+}
+
+.stat-card-slate .stat-card-icon-wrapper {
+  background-color: #f8fafc;
+  color: #475569;
+}

@@ -1,0 +1,343 @@
+.inventory-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inventory-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.inventory-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.inventory-subtitle {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 0.25rem;
+}
+
+.inventory-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Filters & Search */
+.inventory-filter-panel {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.search-box-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.search-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.55rem 0.85rem 0.55rem 2.25rem;
+  font-size: 0.845rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background-color: #f8fafc;
+  outline: none;
+  transition: all 0.15s;
+}
+
+.search-input:focus {
+  background-color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.clear-filters-btn {
+  background: none;
+  border: none;
+  font-size: 0.8125rem;
+  color: #ef4444;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filter-controls-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.filter-label {
+  font-size: 0.725rem;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.filter-select {
+  padding: 0.45rem 0.65rem;
+  font-size: 0.8125rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.filter-select:focus {
+  border-color: #2563eb;
+}
+
+.sort-controls {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.sort-direction-btn {
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 0 0.65rem;
+  border-radius: 0.375rem;
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.sort-direction-btn:hover {
+  background-color: #e2e8f0;
+}
+
+/* Status Chips Bar */
+.status-chips-bar {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.status-chip {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.775rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+.status-chip:hover {
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+}
+
+.status-chip.active {
+  background-color: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+.chip-available.active {
+  background-color: #059669;
+  border-color: #059669;
+}
+
+.chip-assigned.active {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.chip-maintenance.active {
+  background-color: #d97706;
+  border-color: #d97706;
+}
+
+.chip-retired.active {
+  background-color: #dc2626;
+  border-color: #dc2626;
+}
+
+/* Table */
+.table-container {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+  text-align: left;
+}
+
+.inventory-table th {
+  padding: 0.75rem 1rem;
+  background-color: #f8fafc;
+  color: #64748b;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.inventory-row td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.inventory-row:hover {
+  background-color: #fcfdfe;
+}
+
+.category-pill {
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: #475569;
+  background-color: #f1f5f9;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.assignee-link {
+  cursor: pointer;
+}
+
+.assignee-link:hover .font-medium {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.warranty-status-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.warranty-indicator {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+.indicator-active { background-color: #10b981; }
+.indicator-expiring_90 { background-color: #3b82f6; }
+.indicator-expiring_60 { background-color: #f59e0b; }
+.indicator-expiring_30 { background-color: #ea580c; }
+.indicator-expired { background-color: #ef4444; }
+
+.table-actions-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.25rem;
+}
+
+.action-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s;
+}
+
+.action-icon-btn:hover {
+  background-color: #f1f5f9;
+}
+
+.empty-state-cell {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Pagination Footer */
+.pagination-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem 0.25rem;
+}
+
+.pagination-info {
+  font-size: 0.8125rem;
+  color: #64748b;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-indicator {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #475569;
+  padding: 0 0.5rem;
+}

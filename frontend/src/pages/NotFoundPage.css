@@ -1,0 +1,58 @@
+.not-found-root {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.not-found-card {
+  max-width: 32rem;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.not-found-icon-box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  background-color: #fef2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+}
+
+.not-found-status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e11d48;
+  letter-spacing: 0.05em;
+}
+
+.not-found-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0.5rem 0;
+}
+
+.not-found-desc {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.not-found-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}

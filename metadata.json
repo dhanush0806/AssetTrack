@@ -1,0 +1,6 @@
+{
+  "name": "AssetTrack - Enterprise Asset Management System",
+  "description": "Enterprise-grade IT and equipment asset tracking system with lifecycle management, assignment history, maintenance logs, and warranty tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
